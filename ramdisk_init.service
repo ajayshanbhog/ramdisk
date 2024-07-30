@@ -1,0 +1,9 @@
+[Unit]
+Description=Service for creating ramdisk
+
+[Service]
+Type=simple
+ExecStart=/bin/bash /etc/ramdisk/start_ramdisk.sh 1
+
+[Install]
+WantedBy=multi-user.target
